@@ -3,7 +3,7 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-        <div className="bg-img d-flex justify-content-center align-items-center">
+        <div className="bg-img d-flex justify-content-center align-items-center text-center">
             <div className="text-white">
                 <h1>Local Pharmacy</h1>
                 <h5>

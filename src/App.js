@@ -7,10 +7,13 @@ import LogIn from './components/login/LogIn';
 import Pharmacies from './components/Pharmacies/Pharmacies';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
+import Error from './components/error/Error';
+import Details from './components/details/Details';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <Router>
                 <NavBar></NavBar>
                 <Switch>
@@ -23,6 +26,9 @@ function App() {
                     <Route path="/pharmacies">
                         <Pharmacies></Pharmacies>
                     </Route>
+                    <Route path="/details/:id">
+                        <Details></Details>
+                    </Route>
                     <Route path="/contact">
                         <Contact></Contact>
                     </Route>
@@ -31,6 +37,12 @@ function App() {
                     </Route>
                     <Route path="/login">
                         <LogIn></LogIn>
+                    </Route>
+                    <Route path="/signup">
+                        <SignUp></SignUp>
+                    </Route>
+                    <Route exact path="*">
+                        <Error></Error>
                     </Route>
                 </Switch>
             </Router>

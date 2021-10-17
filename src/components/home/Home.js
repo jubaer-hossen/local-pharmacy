@@ -18,7 +18,7 @@ const Home = () => {
             <div>
                 <Banner></Banner>
             </div>
-            <div className="my-5">
+            <div className="my-5 text-center">
                 <h1>Local Pharmacies near you</h1>
                 {pharmacies.length === 0 && (
                     <div className="d-flex justify-content-center pt-5 mt-5">

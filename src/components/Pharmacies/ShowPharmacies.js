@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ShowPharmacies = props => {
-    const { drugName, image } = props.pharmacy;
+    const { drugName, image, id } = props.pharmacy;
 
     return (
         <div className="col">
@@ -16,9 +17,11 @@ const ShowPharmacies = props => {
                     </p>
                 </div>
                 <div>
-                    <button className="btn btn-primary mb-3">
-                        Click For Details
-                    </button>
+                    <Link to={`/details/${id}`}>
+                        <button className="btn btn-primary mb-3">
+                            Click For Details
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
