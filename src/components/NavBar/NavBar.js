@@ -85,7 +85,8 @@ const NavBar = () => {
                                         onClick={logOut}
                                         className="btn btn-warning"
                                     >
-                                        Log Out
+                                        <i class="fas fa-sign-out-alt"></i> Log
+                                        Out
                                     </button>
                                 </li>
                             ) : (
@@ -95,7 +96,8 @@ const NavBar = () => {
                                         aria-current="page"
                                         to="/login"
                                     >
-                                        Log In
+                                        <i class="fas fa-sign-in-alt"></i> Log
+                                        In
                                     </Link>
                                 </li>
                             )}

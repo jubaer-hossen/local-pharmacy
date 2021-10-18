@@ -21,9 +21,11 @@ const LogIn = () => {
     const auth = getAuth();
 
     const handleGoogleLogin = () => {
-        signInUsingGoogle().then(result => {
-            history.push(redirect_url);
-        });
+        signInUsingGoogle()
+            .then(result => {
+                history.push(redirect_url);
+            })
+            .finally(() => setIsLogin(false));
     };
 
     const handleEmailChange = e => {
@@ -128,7 +130,7 @@ const LogIn = () => {
                         onClick={handleGoogleLogin}
                         className="btn btn-danger"
                     >
-                        Google Sign In
+                        <i class="fab fa-google"></i> Google Sign In
                     </button>
                 </div>
             </div>
