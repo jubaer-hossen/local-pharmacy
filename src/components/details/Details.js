@@ -22,7 +22,7 @@ const Details = () => {
     console.log(singleDetail);
     return (
         <div className="container my-5 d-md-flex justify-content-around align-items-center">
-            <div>
+            <div className="card card-body me-2">
                 <h3>Pharmacy Name: {singleDetail?.drugName}</h3>
                 <h4>City: {singleDetail?.drugCity}</h4>
                 <h5>Company: {singleDetail?.drugCompany}</h5>
@@ -32,7 +32,7 @@ const Details = () => {
             <div>
                 <img
                     src={singleDetail?.image}
-                    className="img-thumbnail img-fluid"
+                    className="card img-thumbnail img-fluid"
                     alt=""
                 />
             </div>

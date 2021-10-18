@@ -3,9 +3,9 @@ import './contact.css';
 
 const Contact = () => {
     return (
-        <div className="contact mb-5">
-            <form className="bg-primary background  py-5 m-5 mx-auto w-75">
-                <div className="w-50 mx-auto my-5 bg-light p-5 rounded">
+        <div className="contact">
+            <form className="bg-primary mx-auto w-75 p-5 text-white mt-5">
+                <div className="rounded">
                     <h3 className="text-center">Contact Us</h3>
                     <div className="form-group">
                         <label>Your Name</label>
@@ -36,18 +36,13 @@ const Contact = () => {
                     </div>
                     <br />
                     <div>
-                        <textarea
-                            rows="4"
-                            cols="52"
-                            name="comment"
-                            form="usrform"
-                        >
-                            Hey... say something!
+                        <textarea name="comment" form="usrform">
+                            say something...
                         </textarea>
                     </div>
 
-                    <div className="text-center mt-4">
-                        <button type="submit" className="btn btn-primary">
+                    <div className="text-center pb-3 mt-4">
+                        <button type="submit" className="btn btn-danger w-50">
                             Submit
                         </button>
                     </div>

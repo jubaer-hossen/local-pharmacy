@@ -36,9 +36,9 @@ function App() {
                         <Route path="/achieve">
                             <Achieve></Achieve>
                         </Route>
-                        <Route path="/contact">
+                        <PrivateRoute path="/contact">
                             <Contact></Contact>
-                        </Route>
+                        </PrivateRoute>
                         <Route path="/about">
                             <About></About>
                         </Route>

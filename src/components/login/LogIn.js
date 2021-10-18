@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import './Login.css';
 import {
     getAuth,
     createUserWithEmailAndPassword,
@@ -75,11 +76,8 @@ const LogIn = () => {
             });
     };
     return (
-        <form
-            onSubmit={handleSignUp}
-            className="bg-primary background  py-5 m-5 mx-auto w-75"
-        >
-            <div className="w-50 mx-auto my-5 bg-light p-5 rounded">
+        <form onSubmit={handleSignUp} className="bg-primary pt-5 bg-form">
+            <div className="container mx-auto bg-light mt-5 p-5 rounded">
                 <h3 className="text-center">
                     {isLogin ? 'Log In' : 'Sign Up'}
                 </h3>
