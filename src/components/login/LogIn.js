@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
-import { Link, useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
-import './Login.css';
+import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+} from 'firebase/auth';
 
 const LogIn = () => {
     const { signInUsingGoogle } = useAuth();
@@ -12,6 +15,8 @@ const LogIn = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [isLogin, setIsLogin] = useState(false);
+    const [error, setError] = useState('');
 
     const auth = getAuth();
 
@@ -29,13 +34,43 @@ const LogIn = () => {
         setPassword(e.target.value);
     };
 
+    const toggleLogin = e => {
+        setIsLogin(e.target.checked);
+    };
+
     const handleSignUp = e => {
-        console.log(email, password);
-        createUserWithEmailAndPassword(auth, email, password).then(result => {
-            const user = result.user;
-            console.log(user);
-        });
         e.preventDefault();
+        if (password.length < 6) {
+            setError('Password must be at least 6 characters long.');
+            return;
+        }
+        isLogin
+            ? processLogin(email, password)
+            : createNewUser(email, password);
+    };
+
+    const processLogin = (email, password) => {
+        signInWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                setError('');
+            })
+            .catch(error => {
+                setError(error.message);
+            });
+    };
+
+    const createNewUser = (email, password) => {
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                setError('');
+            })
+            .catch(error => {
+                setError(error.message);
+            });
     };
     return (
         <form
@@ -43,7 +78,9 @@ const LogIn = () => {
             className="bg-primary background  py-5 m-5 mx-auto w-75"
         >
             <div className="w-50 mx-auto my-5 bg-light p-5 rounded">
-                <h3 className="text-center">Sign In</h3>
+                <h3 className="text-center">
+                    {isLogin ? 'Log In' : 'Sign Up'}
+                </h3>
 
                 <div className="form-group">
                     <label>Email address</label>
@@ -66,16 +103,26 @@ const LogIn = () => {
                         required
                     />
                 </div>
+                <div className="text-danger">{error}</div>
+                <br />
+                <div>
+                    <input
+                        onChange={toggleLogin}
+                        className="form-check-input"
+                        type="checkbox"
+                        name="
+                    "
+                        id="checkbox"
+                    />
+                    <label htmlFor="checkbox">Already Registered</label>
+                </div>
 
                 <div className="text-center mt-4">
                     <button type="submit" className="btn btn-primary">
-                        Submit
+                        {isLogin ? 'Log In' : 'Sign Up'}
                     </button>
                 </div>
-                <p>
-                    New to "Local Pharmacies"
-                    <Link to="/signup"> Sign Up </Link>
-                </p>
+
                 <div className="text-center mt-4">
                     <button
                         onClick={handleGoogleLogin}

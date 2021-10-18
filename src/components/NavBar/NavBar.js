@@ -49,9 +49,9 @@ const NavBar = () => {
                                 <Link
                                     className="nav-link active"
                                     aria-current="page"
-                                    to="/home"
+                                    to="/achieve"
                                 >
-                                    Home
+                                    ACHIEVE
                                 </Link>
                             </li>
                             <li className="nav-item">

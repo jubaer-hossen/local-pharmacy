@@ -12,6 +12,7 @@ import Details from './components/details/Details';
 import SignUp from './components/SignUp/SignUp';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Achieve from './components/achieve/Achieve';
 
 function App() {
     return (
@@ -32,6 +33,9 @@ function App() {
                         <PrivateRoute path="/details/:id">
                             <Details></Details>
                         </PrivateRoute>
+                        <Route path="/achieve">
+                            <Achieve></Achieve>
+                        </Route>
                         <Route path="/contact">
                             <Contact></Contact>
                         </Route>
@@ -40,9 +44,6 @@ function App() {
                         </Route>
                         <Route path="/login">
                             <LogIn></LogIn>
-                        </Route>
-                        <Route path="/signup">
-                            <SignUp></SignUp>
                         </Route>
                         <Route exact path="*">
                             <Error></Error>
