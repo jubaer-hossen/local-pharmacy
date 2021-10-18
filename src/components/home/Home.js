@@ -29,7 +29,7 @@ const Home = () => {
                     </div>
                 )}
                 <div className="row row-cols-1 row-cols-md-3 g-4">
-                    {pharmacies.slice(0, 6).map(pharmacy => (
+                    {pharmacies.slice(6, 12).map(pharmacy => (
                         <Pharmacy
                             key={pharmacy.id}
                             pharmacy={pharmacy}
