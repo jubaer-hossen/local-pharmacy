@@ -36,7 +36,12 @@ const Contact = () => {
                     </div>
                     <br />
                     <div>
-                        <textarea name="comment" form="usrform">
+                        <textarea
+                            className="w-100"
+                            col="100"
+                            name="comment"
+                            form="usrform"
+                        >
                             say something...
                         </textarea>
                     </div>
