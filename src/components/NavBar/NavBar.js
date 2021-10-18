@@ -42,7 +42,7 @@ const NavBar = () => {
                                     aria-current="page"
                                     to="/pharmacies"
                                 >
-                                    PHARMACIES
+                                    SERVICES
                                 </Link>
                             </li>
                             <li className="nav-item">

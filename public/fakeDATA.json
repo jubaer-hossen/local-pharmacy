@@ -9,7 +9,8 @@
         "drugCompany": "Physicians Total Care, Inc.",
         "drugCity": "Tisno",
         "phone": "491-908-9549",
-        "timeZone": "Europe/Zagreb"
+        "timeZone": "Europe/Zagreb",
+        "details": "Carvedilol, sold under the brand name Coreg among others, is a medication used to treat high blood pressure, congestive heart failure, and left ventricular dysfunction in people who are otherwise stable. For high blood pressure, it is generally a second-line treatment. It is taken by mouth"
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
         "drugCompany": "Mylan Pharmaceuticals Inc.",
         "drugCity": "Liangnong",
         "phone": "864-769-7837",
-        "timeZone": "Asia/Shanghai"
+        "timeZone": "Asia/Shanghai",
+        "details": "Repaglinide is an antidiabetic drug in the class of medications known as meglitinides, and was invented in 1983. Repaglinide is an oral medication used in addition to diet and exercise for blood sugar control in type 2 diabetes mellitus."
     },
     {
         "id": 3,
@@ -33,7 +35,8 @@
         "drugCompany": "NATURE REPUBLIC CO., LTD.",
         "drugCity": "Wałcz",
         "phone": "593-428-5111",
-        "timeZone": "Europe/Warsaw"
+        "timeZone": "Europe/Warsaw",
+        "details": "Carvedilol, sold under the brand name Coreg among others, is a medication used to treat high blood pressure, congestive heart failure, and left ventricular dysfunction in people who are otherwise stable. For high blood pressure, it is generally a second-line treatment. It is taken by mouth"
     },
     {
         "id": 4,
@@ -45,7 +48,8 @@
         "drugCompany": "Procter & Gamble Manufacturing Company",
         "drugCity": "Zhongzhang",
         "phone": "252-746-3810",
-        "timeZone": "Asia/Chongqing"
+        "timeZone": "Asia/Chongqing",
+        "details": "Repaglinide is an antidiabetic drug in the class of medications known as meglitinides, and was invented in 1983. Repaglinide is an oral medication used in addition to diet and exercise for blood sugar control in type 2 diabetes mellitus."
     },
     {
         "id": 5,
@@ -57,7 +61,8 @@
         "drugCompany": "REMEDYREPACK INC.",
         "drugCity": "Cintawana",
         "phone": "800-203-8952",
-        "timeZone": "Asia/Jakarta"
+        "timeZone": "Asia/Jakarta",
+        "details": "Carbidopa is a drug given to people with Parkinson's disease in order to inhibit peripheral metabolism of levodopa. This property is significant in that it allows a greater proportion of peripheral levodopa to cross the blood–brain barrier for central nervous system effect."
     },
     {
         "id": 6,
@@ -69,7 +74,8 @@
         "drugCompany": "Bryant Ranch Prepack",
         "drugCity": "Novaya Usman’",
         "phone": "878-686-5647",
-        "timeZone": "Europe/Moscow"
+        "timeZone": "Europe/Moscow",
+        "details": "Warfarin, sold under the brand name Coumadin among others, is a medication that is used as an anticoagulant. It is commonly used to treat blood clots such as deep vein thrombosis and pulmonary embolism, and to prevent stroke in people who have atrial fibrillation, valvular heart disease or artificial heart valves."
     },
     {
         "id": 7,
@@ -81,7 +87,8 @@
         "drugCompany": "Xspire Pharma LLC",
         "drugCity": "San Isidro",
         "phone": "349-611-5983",
-        "timeZone": "Asia/Manila"
+        "timeZone": "Asia/Manila",
+        "details": "Mepyramine, also known as pyrilamine, is a first generation antihistamine, targeting the H₁ receptor as an inverse agonist. It rapidly permeates the brain often causing drowsiness"
     },
     {
         "id": 8,
@@ -93,7 +100,8 @@
         "drugCompany": "Supervalu Inc",
         "drugCity": "Sabana Grande de Palenque",
         "phone": "901-125-4484",
-        "timeZone": "America/Santo_Domingo"
+        "timeZone": "America/Santo_Domingo",
+        "details": "EQUALINE is a one-stroke calculation puzzle where you have to connect numbers and symbols with lines to complete a calculation. There is only one correct answer for each combination of nine squares, and the target number increases with each puzzle. It's a highly competitive action puzzle game"
     },
     {
         "id": 9,
@@ -105,7 +113,8 @@
         "drugCompany": "Hyland's",
         "drugCity": "Songgui",
         "phone": "504-824-1200",
-        "timeZone": "Asia/Chongqing"
+        "timeZone": "Asia/Chongqing",
+        "details": "A sniffle is the instinctive action of inhaling quickly to prevent mucus from flowing from one's nose, as an alternative to blowing the nose"
     },
     {
         "id": 10,
@@ -117,7 +126,8 @@
         "drugCompany": "ALK-Abello, Inc.",
         "drugCity": "Vila Maior",
         "phone": "755-440-2918",
-        "timeZone": "Europe/Lisbon"
+        "timeZone": "Europe/Lisbon",
+        "details": "Botrytis cinerea is a necrotrophic fungus that affects many plant species, although its most notable hosts may be wine grapes. In viticulture, it is commonly known as botrytis bunch rot; in horticulture, it is usually called grey mould or gray mold. "
     },
     {
         "id": 11,
@@ -129,7 +139,8 @@
         "drugCompany": "H.J. Harkins Company, Inc.",
         "drugCity": "Velizh",
         "phone": "778-405-4278",
-        "timeZone": "Europe/Moscow"
+        "timeZone": "Europe/Moscow",
+        "details": "Duloxetine, sold under the brand name Cymbalta among others, is a medication used to treat major depressive disorder, generalized anxiety disorder, fibromyalgia, and neuropathic pain. It is taken by mouth."
     },
     {
         "id": 12,
@@ -141,7 +152,8 @@
         "drugCompany": "Premier Value",
         "drugCity": "Gaxung",
         "phone": "859-618-2580",
-        "timeZone": "Asia/Chongqing"
+        "timeZone": "Asia/Chongqing",
+        "details": "Regrowth is a puzzle game where you race against time to save islands from sinking. Use plants and animals, collect and channel water... However, only with strategy and optimisation can you solve all the levels"
     },
     {
         "id": 13,
@@ -153,7 +165,8 @@
         "drugCompany": "Chain Drug Marketing Association",
         "drugCity": "Kilimatinde",
         "phone": "590-757-5186",
-        "timeZone": "Africa/Dar_es_Salaam"
+        "timeZone": "Africa/Dar_es_Salaam",
+        "details": "Magnesium hydroxide is the inorganic compound with the chemical formula Mg(OH)₂. It occurs in nature as the mineral brucite. It is a white solid with low solubility in water. Magnesium hydroxide is a common component of antacids, such as milk of magnesia."
     },
     {
         "id": 14,
@@ -165,7 +178,8 @@
         "drugCompany": "Preferred Pharmaceuticals, Inc.",
         "drugCity": "Magallanes",
         "phone": "988-689-7103",
-        "timeZone": "Asia/Manila"
+        "timeZone": "Asia/Manila",
+        "details": "Tizanidine, sold under the brand name Zanaflex among others, is a medication that is used to treat muscle spasticity due to spinal cord injury or multiple sclerosis. Effectiveness appears similar to baclofen or diazepam. It is taken by mouth. Common side effects include dry mouth, sleepiness, weakness, and dizziness. "
     },
     {
         "id": 15,
@@ -177,6 +191,7 @@
         "drugCompany": "American Regent, Inc.",
         "drugCity": "Fort Worth",
         "phone": "817-484-6778",
-        "timeZone": "America/Chicago"
+        "timeZone": "America/Chicago",
+        "details": "Paediatrics is the branch of medicine that involves the medical care of infants, children, and adolescents. The American Academy of Pediatrics recommends people seek pediatric care through the age of 21. In the United Kingdom, paediatrics covers patients until age 18."
     }
 ]

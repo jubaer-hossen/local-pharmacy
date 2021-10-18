@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ShowPharmacies = props => {
-    const { drugName, image, id } = props.pharmacy;
+    const { drugName, image, id, details } = props.pharmacy;
 
     return (
         <div className="col">
@@ -10,11 +10,7 @@ const ShowPharmacies = props => {
                 <img src={image} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{drugName}</h5>
-                    <p className="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                    </p>
+                    <p className="card-text">{details}</p>
                 </div>
                 <div>
                     <Link to={`/details/${id}`}>
