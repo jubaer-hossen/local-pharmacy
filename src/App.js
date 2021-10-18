@@ -9,10 +9,10 @@ import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Error from './components/error/Error';
 import Details from './components/details/Details';
-import SignUp from './components/SignUp/SignUp';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Achieve from './components/achieve/Achieve';
+import Footer from './components/Footer/Footer';
 
 function App() {
     return (
@@ -49,6 +49,7 @@ function App() {
                             <Error></Error>
                         </Route>
                     </Switch>
+                    <Footer></Footer>
                 </Router>
             </AuthProvider>
         </div>
