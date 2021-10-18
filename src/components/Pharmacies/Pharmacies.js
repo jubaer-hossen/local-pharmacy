@@ -13,7 +13,7 @@ const Pharmacies = () => {
     }, []);
     // console.log(pharmacies);
     return (
-        <div className="my-5 text-center">
+        <div className="my-5 text-center container">
             {pharmacies.length === 0 && (
                 <div className="d-flex justify-content-center pt-5 mt-5">
                     <div className="spinner-border" role="status">

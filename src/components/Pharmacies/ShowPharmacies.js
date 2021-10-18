@@ -6,7 +6,7 @@ const ShowPharmacies = props => {
 
     return (
         <div className="col">
-            <div className="card h-100">
+            <div className="card h-100 shadow">
                 <img src={image} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{drugName}</h5>

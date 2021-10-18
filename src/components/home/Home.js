@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Banner from './Banner';
 import Pharmacy from './Pharmacy';
 
@@ -18,7 +19,7 @@ const Home = () => {
             <div>
                 <Banner></Banner>
             </div>
-            <div className="my-5 text-center">
+            <div className="my-5 text-center container">
                 <h1>Local Pharmacies near you</h1>
                 {pharmacies.length === 0 && (
                     <div className="d-flex justify-content-center pt-5 mt-5">
@@ -35,6 +36,13 @@ const Home = () => {
                         ></Pharmacy>
                     ))}
                 </div>
+            </div>
+            <div className="text-center mb-5">
+                <Link to="/pharmacies">
+                    <button className="btn btn-primary">
+                        Show More Pharmacies
+                    </button>
+                </Link>
             </div>
         </div>
     );
