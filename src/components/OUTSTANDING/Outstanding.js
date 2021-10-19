@@ -13,7 +13,7 @@ const Outstanding = () => {
             <div>
                 <div class="row row-cols-1 row-cols-md-1 g-4">
                     <div class="col">
-                        <div class="h-100 d-flex align-items-center">
+                        <div class="h-100 d-md-flex align-items-center">
                             <div className="img-color">
                                 <img
                                     src={img1}
@@ -39,7 +39,7 @@ const Outstanding = () => {
                         </div>
                     </div>
                     <div class="col">
-                        <div class="h-100 d-flex align-items-center">
+                        <div class="h-100 d-md-flex align-items-center">
                             <div class="card-body">
                                 <h5 class="card-title text-center">
                                     Emergency Care
@@ -68,7 +68,7 @@ const Outstanding = () => {
                         </div>
                     </div>
                     <div class="col">
-                        <div class="h-100 d-flex align-items-center">
+                        <div class="h-100 d-md-flex align-items-center">
                             <div>
                                 <img
                                     src={img2}
