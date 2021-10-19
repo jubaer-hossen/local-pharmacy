@@ -7,6 +7,7 @@ import Pharmacy from './Pharmacy';
 
 const Home = () => {
     const [pharmacies, setPharmacies] = useState([]);
+    const [categories, setCategories] = useState([]);
 
     useEffect(() => {
         const url =
@@ -15,7 +16,15 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setPharmacies(data));
     }, []);
+
+    useEffect(() => {
+        const url = '/moreFakeData.json';
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setCategories(data));
+    }, []);
     // console.log(pharmacies);
+    // console.log(categories);
     return (
         <div>
             <div>
@@ -49,8 +58,18 @@ const Home = () => {
             <div>
                 <Outstanding></Outstanding>
             </div>
-            <div>
-                <MoreCategory></MoreCategory>
+            <div className="container my-5">
+                <div className="text-center text-primary">
+                    <h1>Category We Can Help You With</h1>
+                </div>
+                <div className="row row-cols-1 row-cols-md-3 g-4 my-3">
+                    {categories.map(category => (
+                        <MoreCategory
+                            key={category.id}
+                            category={category}
+                        ></MoreCategory>
+                    ))}
+                </div>
             </div>
         </div>
     );
