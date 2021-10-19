@@ -41,7 +41,7 @@ const Home = () => {
             <div className="text-center mb-5">
                 <Link to="/pharmacies">
                     <button className="btn btn-primary">
-                        Show More Pharmacies
+                        Show More Services
                     </button>
                 </Link>
             </div>
