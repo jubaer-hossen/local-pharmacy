@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import MoreCategory from '../MoreCategory/MoreCategory';
 import Outstanding from '../OUTSTANDING/Outstanding';
 import Banner from './Banner';
 import Pharmacy from './Pharmacy';
@@ -47,6 +48,9 @@ const Home = () => {
             </div>
             <div>
                 <Outstanding></Outstanding>
+            </div>
+            <div>
+                <MoreCategory></MoreCategory>
             </div>
         </div>
     );
