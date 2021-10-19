@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Outstanding from '../OUTSTANDING/Outstanding';
 import Banner from './Banner';
 import Pharmacy from './Pharmacy';
 
@@ -43,6 +44,9 @@ const Home = () => {
                         Show More Pharmacies
                     </button>
                 </Link>
+            </div>
+            <div>
+                <Outstanding></Outstanding>
             </div>
         </div>
     );
