@@ -6,7 +6,7 @@ const MoreCategory = props => {
     return (
         <div>
             <div className="col h-100">
-                <div className="card h-100 shadow">
+                <div className="card h-100 shadow card-bg-color">
                     <div className="ps-3">
                         <img src={img} alt="..." />
                     </div>

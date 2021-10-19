@@ -58,7 +58,7 @@ const Home = () => {
             <div>
                 <Outstanding></Outstanding>
             </div>
-            <div className="container my-5">
+            <div className="container bg-color rounded py-5">
                 <div className="text-center text-primary">
                     <h1>Category We Can Help You With</h1>
                 </div>
