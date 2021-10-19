@@ -9,7 +9,11 @@ const NavBar = () => {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
-                        Pharmacy
+                        {/* Pharmacy */}
+                        <img
+                            src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/50/000000/external-pharmacy-medical-prettycons-lineal-color-prettycons.png"
+                            alt=""
+                        />
                     </Link>
                     <button
                         className="navbar-toggler"
