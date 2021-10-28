@@ -83,6 +83,19 @@ const NavBar = () => {
                                     {user.displayName}
                                 </span>
                             </li>
+                            <li className="nav-item">
+                                <img
+                                    width="50"
+                                    // // src={user.photoUrl}
+                                    className="rounded-circle me-3"
+                                    // src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                                    src={
+                                        user.photoUrl ||
+                                        'https://cdn-icons-png.flaticon.com/512/149/149071.png'
+                                    }
+                                    alt=""
+                                />
+                            </li>
                             {user.email ? (
                                 <li className="nav-item">
                                     <button

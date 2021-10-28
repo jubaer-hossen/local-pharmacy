@@ -6,6 +6,7 @@ import {
     getAuth,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
+    updateProfile,
 } from 'firebase/auth';
 
 const LogIn = () => {
@@ -14,6 +15,7 @@ const LogIn = () => {
     const history = useHistory();
     const redirect_url = location.state?.from || '/home';
 
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [isLogin, setIsLogin] = useState(false);
@@ -27,6 +29,9 @@ const LogIn = () => {
                 history.push(redirect_url);
             })
             .finally(() => setIsLogin(false));
+    };
+    const handleNameChange = e => {
+        setName(e.target.value);
     };
 
     const handleEmailChange = e => {
@@ -58,6 +63,8 @@ const LogIn = () => {
                 const user = result.user;
                 console.log(user);
                 setError('');
+                alert('successfully Login');
+                history.push(redirect_url);
             })
             .catch(error => {
                 setError(error.message);
@@ -69,10 +76,28 @@ const LogIn = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                alert('successfully SignUp');
                 setError('');
+                setUserName();
+                history.push(redirect_url);
+                window.location.reload();
             })
             .catch(error => {
                 setError(error.message);
+            });
+    };
+
+    const setUserName = () => {
+        updateProfile(auth.currentUser, {
+            displayName: name,
+        })
+            .then(() => {
+                // Profile updated!
+                // ...
+            })
+            .catch(error => {
+                // An error occurred
+                // ...
             });
     };
     return (
@@ -81,6 +106,19 @@ const LogIn = () => {
                 <h3 className="text-center">
                     {isLogin ? 'Log In' : 'Sign Up'}
                 </h3>
+
+                {!isLogin && (
+                    <div className="form-group">
+                        <label>Full Name</label>
+                        <input
+                            onBlur={handleNameChange}
+                            type="text"
+                            className="form-control"
+                            placeholder="Enter Your Name"
+                            required
+                        />
+                    </div>
+                )}
 
                 <div className="form-group">
                     <label>Email address</label>
